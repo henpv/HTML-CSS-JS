@@ -1,0 +1,29 @@
+*{ /* Empleando el asterisco, hacemos referencia a todos los elementos del HTML, en este caso se les esta dejando el mergin y el padding en 0 */
+    margin: 0;
+    padding: 0;
+}
+
+#titulo_principal{/* Para los ID se utiliza la almoadilla (identificador CSS)*/
+    color: rgb(11, 209, 183);
+    font-size: 200px;
+    text-align: center;
+}
+
+h2{/* Se define un estilo a todos los h1 */
+    color: crimson;
+    text-align: center;
+}
+h3{/* Se define un estilo a todos los h3 */
+    color: fuchsia;    
+}
+p{/* Se define un estilo a todos los p */
+    color: rgb(17, 30, 47);
+}
+.bloque{ /* utilizando el .nombredeclase, podemos definir un estilo para todos los elementos que contenga la clase en referencia (Clase CSS) */
+   border: 10px solid navy; 
+   background-color: paleturquoise;
+   text-align: center;
+   margin:10px 200px; /*A pesar de que al inicio se quito el margin y el pading, se puede ir asignandole valores a las caracteristicas definidas al comienzo, a medida que se necesiten */
+   padding: 15px
+   ; 
+}
