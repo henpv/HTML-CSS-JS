@@ -27,3 +27,34 @@ p{/* Se define un estilo a todos los p */
    padding: 15px
    ; 
 }
+
+#fun:hover{
+    font-size: 17px;
+    color: blue;
+}
+
+.titulo{
+   width: 100%;
+   height: 200px;
+   border: 1px solid rgb(72, 72, 112); 
+}
+
+.centrar{
+    text-align: center;
+}
+.boton:link, .boton:visited{
+    font-size: 20px;
+    background-color: rgb(94, 170, 170);
+    color: black;
+    padding: 15px;
+    display: inline-block;   /* con la display-inline-block. se respetara las propiedades de margen y padding*/
+    padding: 10px; 
+}
+.boton:hover, .boton:active{
+    font-size: 20px;
+    background-color: rgb(12, 52, 146);
+    color: rgb(210, 220, 230);
+    padding: 15px;
+    display: inline-block;   /* con la display-inline-block. se respetara las propiedades de margen y padding*/
+    padding: 10px;
+}
