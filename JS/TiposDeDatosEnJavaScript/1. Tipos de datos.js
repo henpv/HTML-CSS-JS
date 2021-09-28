@@ -70,3 +70,15 @@ console.log(typeof nombre);
 var y = null;
 console.log(y);
 console.log(typeof y);
+
+
+/* Tipo Array (tipo object)--------------------------------------------------------------------------------- */
+var autos = ['BMW','AUDI','VOLVO'];
+console.log(autos);
+console.log(typeof autos);
+
+
+/* Cadena vacia (tipo string)--------------------------------------------------------------------------------- */
+var z = '';
+console.log(z);
+console.log(typeof z);
