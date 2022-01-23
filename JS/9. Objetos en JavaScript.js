@@ -11,7 +11,7 @@ let persona = {
 console.log(persona.email);//pára acceder a los atributos del objeto lo hacemos con el punto:  objeto.atributo
 console.log(persona.edad);
 
-console.log(persona.nombreCompleto());
+console.log(persona.nombreCompleto());//Para acceder a un metodo se debe llamar la función con parentesis y si requiere se deben ingresar los argumentos
 
 //Otra manera de crear objetos
 let persona2 = new Object();
@@ -24,11 +24,11 @@ console.log(persona2['direccion']); //Esta es otra manera de obtener el valor de
 
 
 /* ----------------------------------- Recorrer objetos con el for in --------------------------------------------------  */
-for (nombrePropiedades in persona2){
+for (nombrePropiedades in persona){
     //Accedemos al nombre de los atributos con la variable de iterador que se definio
     console.log(nombrePropiedades);
     //Ingresamos al valor de cada atributo
-    console.log(persona2[nombrePropiedades]);
+    console.log(persona[nombrePropiedades]);
 }
 
 

@@ -29,7 +29,7 @@ class Persona{ //Las clases deben comenzar por mayuscula
     //Sobreecribiendo el metodo de la clase padre (OBJECT)
     toString(){
         //Se aplica polimorfismo (multiples formas en tiempo de ejecución)
-        //el metodo que se ejecuta depende si es una referencia de tipo padre o de tipo hijo
+        //el metodo que se ejecuta depende si es una referencia de tipo padre o de tipo hijo (Objeto al que se este apuntando)
         return this.nombreCompleto();
     }
 
@@ -51,7 +51,7 @@ console.log(persona1.nombre); //Se valida la modificación con el GET
 
 class Empleado extends Persona{ //Con la palabra reservada extends hacemos referencia a que clase queremos heredarle los atributos y metodos
 
-    //Creamos un constructor propio para la clase Empleado, que nos permita definir el atributo de departamento, pero debemos incluir tambien los atributos de la clase padre
+    //Creamos un constructor propio para la clase hija Empleado, que nos permita definir el atributo de departamento, pero debemos incluir tambien los atributos de la clase padre
     constructor(nombre, apellido, departamento){ 
         super(nombre, apellido);//LLamamos el constructor de la clase padre, Pasandole los parametros de nombre y apellido que solicitamos a traves de la clase hija
         this._departamento = departamento;
@@ -75,8 +75,6 @@ let empleado1 = new Empleado('Maria', 'Jimenez','Sistemas');
 console.log(empleado1);
 console.log(empleado1.nombre);//Validamos que se hereda el metodo get de la clase padre
 console.log(empleado1.nombreCompleto());//Validamos que hereda los metodos de la clase padre
-
-
 
 
 /* Object es la clase padre de todas, todas las clases que se creen, siempre van a heredar de la clase Object, por lo tanto Object tiene unos metodos que aplican a todas la clases en JS */

@@ -43,7 +43,8 @@ body{
     cursor: pointer; /* cambia el puntero a una una mano señalando, cuando se pasa el cursor por el elemento de boton */
     padding: 15px;
     margin-top: 30px;
-
-
 }
 
+.contenedor .elemento input[type="submit"]:hover{
+    color: rgba(52, 9, 107, 0.938);
+}

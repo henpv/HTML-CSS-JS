@@ -18,7 +18,7 @@ let personax = {
     apellido: "Perez",
     email: "jperez@correo.com",
     edad: 28,
-    idioma:'es',
+    idioma:'es  ',
     get lenguaje(){ //método GET
         return this.idioma.toUpperCase();//El metodo toUpperCase, permite convertir el valor a mayúscula
     },
@@ -35,13 +35,13 @@ console.log(personax.idioma);//Validamos que si se cambio el valor del atributo 
 
 /* ----------------------------------------- Contructor de Objetos ------------------------------------------------- */
 function Empleado (nombre, apellido, email){ //Es recomendable que un constructor comience por mayuscula
-    this.nombre = nombre; //El this.nombre es para el identidficador de metodo y el nombre sencillo es el parametro que recibe al llamar el constructor
+    this.nombre = nombre; //El this.nombre es para el identificador de metodo y el nombre sencillo es el parametro que recibe al llamar el constructor
     this.apellido = apellido;
     this.email = email
     this.nombreCompleto = function(){ // De igual manera se le pueden asignar metodos o funciones que aplicaran a todos los objetos que se creen
         return this.nombre + " " + this.apellido;
     }
-}
+} 
 //Se utilia el constructor para generar un nuevo objeto
 let secretaria = new Empleado('susana','díaz', 'sdiaz@mail.com');
 console.log(secretaria);
@@ -53,7 +53,7 @@ console.log(analista);
 console.log(analista.nombreCompleto()); // llamamos el metodo del objeto
 
 /* --------------------------------------------Metodo prototype ------------------------------------------------------ */
-//Este metodo nos permite agregarle un nuevo elelemtnto al contructor y que ese cambio lo tomen todos los objetos que han sido creados a partir del ese constructor
+//Este metodo nos permite agregarle un nuevo elemento al contructor y que ese cambio lo tomen todos los objetos que han sido creados a partir del ese constructor
 Empleado.prototype.telefono = '55415232';
 console.log(secretaria.telefono);
 console.log(analista.telefono);
@@ -63,8 +63,8 @@ console.log(analista.telefono);
 let automovil1 = { //Objeto 1, con el atributo de referencia completa
     marca: 'audi',
     color: 'rojo',
-    referenciaCompleta: function(){
-        return this.marca + ' ' + this.color
+    referenciaCompleta: function(rango, modelo){
+        return rango + ": " + this.marca + ' ' + this.color + ", " + modelo;
     }
 }
 
@@ -74,4 +74,29 @@ let automovil2 = { // Objeto 2 sin metodos
 }
 
 //el objeto2 toma prestado el metodo del objeto1 para obtener su referencia completa (a traves del metodo call)
-console.log(automovil1.referenciaCompleta.call(automovil2));
+console.log(automovil1.referenciaCompleta.call(automovil2, "A", "2017" ));
+
+
+/* --------------------------------------------- Metodo Apply----------------------------------------------------------- */
+//el metodo apply nos va a permitir mandar a llamar un metodo en un objeto que no tienen definido cierto metodo
+let automovil10 = { //Objeto 1, con el atributo de referencia completa
+    marca: 'audi',
+    color: 'rojo',
+    referenciaCompleta: function(rango, modelo){
+        return rango + ": " + this.marca + ' ' + this.color + ", " + modelo;
+    }
+}
+
+console.log( automovil10.referenciaCompleta("B","2001") );
+
+
+let automovil20 = { // Objeto 2 sin metodos
+    marca: 'Renault',
+    color: 'azul',
+}
+
+let arreglo = ["A", "2017"]; // Para el metodo apply se requiere crear un arreglo el cual contendra los datos que se le pasen al metodo
+
+//el objeto2 toma prestado el metodo del objeto1 para obtener su referencia completa (a traves del metodo apply)
+console.log(automovil10.referenciaCompleta.apply(automovil2, arreglo));
+// a diferencia del metodo call, se reuiere crear un arreglo para que puedan pasar los argumentos al metodo del objeto

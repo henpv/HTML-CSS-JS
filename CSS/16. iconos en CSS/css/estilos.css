@@ -14,6 +14,7 @@ div{
 .icono_rojo{
     font-size: 3em;
     color: crimson;
+    vertical-align:middle;/* con vertival align podemos centrar el texto y el icono tanto en top, botton, center... entre otros */
 }
 .icono_verde{
     font-size: 6em;

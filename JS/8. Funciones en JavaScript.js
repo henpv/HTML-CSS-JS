@@ -22,7 +22,7 @@ let x = funcionRetorno(10,5);
 console.log(x);
 
 /* --------------------------------------- Declaración Función de tipo expesión --------------------------------------- */
-let sumar = function (a,b){return a + b }
+let sumar = function (a,b){return a + b };
 
 x = sumar(1,2);
 console.log(x);
@@ -32,7 +32,7 @@ console.log(x);
 //Esta función se llama a sí misma apenas se crea, no se le asigna a ninguna variable.(Esta función solo se ejecuta una vez así misma y no se puede reutilizar)
 
 (function (a , b){
-    console.log('Ejecutando la función ' + (a + b));
+    console.log('Ejecutando la función: ' + (a + b));
 })(3,4)
 
 
@@ -42,6 +42,8 @@ const sumarFuncionTipoFecha = (a,b) => a + b;
 
 let resultado = sumarFuncionTipoFecha(3, 5);
 console.log(resultado);
+let resultados = sumarFuncionTipoFecha(8, 5);
+console.log(resultados);
 
 
 /* ----------------------------------------------------Argumentos y parametros------------------------------------------------------- */
@@ -51,8 +53,20 @@ let sumarx = function (a = 4, b = 5){//Se definen parametros con valores por def
     console.log(arguments[0]); //muestra el valor del argumento dado al momento de llamr la función
     console.log(arguments[1]);
     console.log(arguments[2]);
-    return a + b
+    return a + b ;
 }
 
 resultado = sumarx(3, 6 , 7); //Se pueden enviar mas argumentos que parametros definidos
 console.log(resultado);
+
+/* ----------------------------------------Sumar todos los argumentos de una función sin definir parametros------------------------- */
+let result = sumarTodo(1,2,3,4,5,6,7,8);
+
+function sumarTodo(){
+    sumama = 0;
+
+    for( let i=0; i < arguments.length; i++ ){ /* arguments es un metodo que devuelve los argumentos que se le pasen a una función */
+        sumama += arguments[i];
+    }
+    console.log(sumama);
+}

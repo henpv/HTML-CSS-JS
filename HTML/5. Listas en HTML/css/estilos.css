@@ -1,5 +1,6 @@
 h1{
     color:rgba(4, 24, 90, 0.966);
+    font-size: 100px;
 }
 ul{
     list-style-type: none; /* Quita la viñeta */

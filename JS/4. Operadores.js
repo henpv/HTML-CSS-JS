@@ -1,5 +1,4 @@
-let a = 3,
-  b = 2;
+let a = 3, b = 2;
 let z;
 
 /*--------------- Operadores aritmeticos de ( + , - , * , / , % , **) ------------------------------- */
@@ -17,7 +16,7 @@ z = a / b; /* División */
 console.log(`Resultado de la suma ${z}`);
 
 z = a % b; /* Modulo o residuo */
-console.log(`Resultado del modulo ${z}`);
+console.log(`Resultado del modulo (Residuo) ${z}`);
 
 z = a ** b; /* exponente */
 console.log(`Resultado del exponente ${z}`);
@@ -66,22 +65,14 @@ let q = 3,
   w = 2,
   e = "3";
 
-z =
-  q ==
-  e; /* comparador de igualdad no estricto (valida solo el valor más no el tipo de dato) */
+z = q == e; /* comparador de igualdad no estricto (valida solo el valor más no el tipo de dato) */
 console.log(z);
-z =
-  q ===
-  e; /* comparador de igualdad estricto (valida el valor y tambien el tipo de dato) */
+z = q === e; /* comparador de igualdad estricto (valida el valor y tambien el tipo de dato) */
 console.log(z);
 
-z =
-  q !=
-  e; /* comparador de desigualdad no estricto (valida solo el valor más no el tipo de dato) */
+z =q != e; /* comparador de desigualdad no estricto (valida solo el valor más no el tipo de dato) */
 console.log(z);
-z =
-  q !==
-  e; /* comparador de desigualdad estricto (valida el valor y tambien el tipo de dato) */
+z = q !== e; /* comparador de desigualdad estricto (valida el valor y tambien el tipo de dato) */
 console.log(z);
 
 /* ----------------------------------------Operadores relacionales--------------------------------------------- */
@@ -100,8 +91,7 @@ console.log(z);
 /* --------------------------------------------Operador AND y OR--------------------------------------------------- */
 //AND
 a = 5;
-let valMin = 0,
-  valMax = 10;
+let valMin = 0, valMax = 10;
 
 if (a >= valMin && a <= valMax) {
   //Evaluación con un AND (&&), ambas condiciones tienen que ser verdaderas para que el AND devuelva un true
@@ -111,8 +101,7 @@ if (a >= valMin && a <= valMax) {
 }
 
 //OR
-let vacaciones = true,
-  diaDescanso = false;
+let vacaciones = true,  diaDescanso = false;
 
 if (vacaciones || diaDescanso) {
   /* Evalución con un OR (||), si alguna de las condiciones o ambas se cumple, entonces devuelve un true */

@@ -26,7 +26,7 @@ console.log(z);
 
 /* JavaScript es sensible a mayusculas y minusculas */
 let apellidocompleto = 'Parra Velasco';
-let apellidoCompleto = 'Perez vasquez';
+let apellidoCompleto = 'Perez Vasquez';
 console.log(apellidocompleto + " " + apellidoCompleto);
 
 /* Reglas para dar nombre a las variables

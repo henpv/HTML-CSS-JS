@@ -11,6 +11,7 @@ div.contenedor{
     flex-direction: row;/* por defecto cuando se emplea el flex, el flex direction esta en row, tambien se puede invertir el orden con row-reverse */
     flex-wrap: wrap;/* este atributo permite que cuantdo el tamaño de la pantalla se reuce, los elementos pasan a la siguientente fila y se acomodan para que se puedan visualizar */
     /* flex-flow: row wrap; (con este atributo podemos mezclar los dos atribuos anteriores en uno solo) */
+ 
 }
 div.contenedor > p{/* Selector combinado para tomar los elementos p hijos que esten dentro del div con clase contenedor */
     background-color: #4895ef;

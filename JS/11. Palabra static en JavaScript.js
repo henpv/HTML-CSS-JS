@@ -2,16 +2,17 @@
 class Persona{ 
 
     //Atributos staticos
-    static contadorObjetosPersonas = 5;//Los atributos static se asocian con la clase (plantilla)
-
+    static contadorObjetosPersonas = 0;//Los atributos static se asocian con la clase (plantilla)
+    static generarID = 1; //Podemos generar un contador que incremente y le asigne un valor a un atributo a medida que se crean mas clases.
 
     //Atributos no static
     email = 'miemail@mail.com'; //Los atributos no static, se asocian a traves de los objetos
 
-
     constructor(nombre, apellido){ 
         this._nombre = nombre; 
         this._apellido = apellido;
+        Persona.contadorObjetosPersonas++; //Se puede hacer un metodo contador que incremente a medida que se crean mas objetos.
+        this.idPersona = Persona.generarID++;
     }
     get nombre(){
         return this._nombre;
@@ -44,9 +45,21 @@ Persona.saludar2(personax); //El metodo estatico recibe como argumento el objeto
 
 
 /* ----------------------------------------------------Atributos estaticos ---------------------------------------------- */
-//Una vez definida el atributo static en la clase, lo llamamos a travez de la clase y no desde el objero, al igual que con el metododo static
+//Una vez definida el atributo static en la clase, lo llamamos a travez de la clase y no desde el objeto, al igual que con el metododo static
 console.log(Persona.contadorObjetosPersonas);
+console.log(personax.idPersona); //Obtenemos el ID generado por el contador generador de ID
+
+//A medida que se crean más objetos el numero del contador aumenta
+let personaz = new Persona('Diego', 'Ramirez');
+console.log(Persona.contadorObjetosPersonas);
+console.log(personaz.idPersona);
+
+let personaw = new Persona('Milena', 'Patiño');
+console.log(Persona.contadorObjetosPersonas);
+console.log(personaw.idPersona);
+
+//Al crear objetos de una clase hija, el contador tambien aumentara ya que de manera indirecta la clase hija llama a la clase padre.
 
 /* ----------------------------------------------------Atributos no estaticos ---------------------------------------------- */
-//Una vez definida el atributo no static en la clase, lo llamamos a traves del objeto y no desde la clase.
+//Una vez definido el atributo no static en la clase, lo llamamos a traves del objeto y no desde la clase.
 console.log(personax.email);

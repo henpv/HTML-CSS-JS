@@ -22,7 +22,7 @@ console.log(typeof numero);
 var objeto = {
     nombre : "Juan",
     apelido : "Perez",
-    telefono : "32185321651"
+    telefono : "3218532165"
 }
 console.log(objeto);
 

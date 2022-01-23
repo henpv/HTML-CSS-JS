@@ -10,7 +10,7 @@ h1{ /* los elementos se referencian directamente, sin necesidad de un simbolo in
     text-align: center;
 }
 
-.parrafo{ /* El . se utiliza para referenciar a una clase, si la clse tiene dos o mas palabras usamos el guin abajo o al medio ej: centrar-texto o centrar_texto */
+.parrafo{ /* El . se utiliza para referenciar a una clase, si la clase tiene dos o mas palabras usamos el guion abajo o al medio ej: centrar-texto o centrar_texto */
     text-align: center;
     color: darkblue;
 

@@ -29,7 +29,7 @@ h1{
     border: 10px solid rgba(2, 75, 38, 0.287); /* con solo el atributo border, podemos ir agregandole condiciones para el estilo */
     /* se le aplica un color con transparencia */
 
-    border-radius: 23px; /* redondeo de los bordes */
+    border-radius: 23px 10px; /* redondeo de los bordes */
 }
 .doble{
     border: 5px double;

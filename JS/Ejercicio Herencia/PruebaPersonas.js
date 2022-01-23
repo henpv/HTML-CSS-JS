@@ -103,6 +103,7 @@ console.log( persona2.toString() );
 
 let empleado1 = new Empleado('Karla', 'Gomez', '25', 5000);
 console.log(empleado1.toString());
+
 let empleado2 = new Empleado('Laura', 'Quintero', 33, 7000);
 console.log( empleado2.toString() );
 

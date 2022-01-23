@@ -22,7 +22,7 @@ div.contenedor p::first-line{ /* pseudo clase que hace que la primera linea de c
 div.contenedor p::first-letter{ /* primera letra de un tamaño diferente */
     font-size: 1.5em;
 }
-div.contenedor p::before{ /* agrega un caractero al inicio del parrafo */
+div.contenedor p::before{ /* agrega un caracter al inicio del parrafo */
     content: "- ";
 }
 div.contenedor p::after{/* agrega un caractero al final del parrafo */

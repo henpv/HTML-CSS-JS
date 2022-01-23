@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Sofia&effect=anaglyph&display=swap'); /* importamosun estilo de google fonts y se le agreca un ampersand con le linea del efecto quer tambien vamos a importar*/
+@import url('https://fonts.googleapis.com/css?family=Sofia&family=Roboto&effect=anaglyph&display=swap'); /* importamos un estilo de google fonts y se le agrega un ampersand con la linea del efecto quer tambien vamos a importar*/
 
 h1{
     color: #ef476f;
@@ -46,7 +46,7 @@ h1{
 }
 .fuente_verdana{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 3vw;/* la v es de viewport, y este tamalo es responsivo y se acomoda a la pantalla, ya sea del alto o el ancho, todo depende si se compaña con una h(height) o de una w(weight) */
+    font-size: 3vw;/* la v es de viewport, y este tamaño es responsivo y se acomoda a la pantalla, ya sea del alto o el ancho, todo depende si se compaña con una h(height) o de una w(weight) */
     /* el 3 significa el 3% de nuiestra panatalla */
 }
 .caja.monospace{
