@@ -6,7 +6,7 @@ class Persona{
     static generarID = 1; //Podemos generar un contador que incremente y le asigne un valor a un atributo a medida que se crean mas clases.
 
     //Atributos no static
-    email = 'miemail@mail.com'; //Los atributos no static, se asocian a traves de los objetos
+    email = 'miemail@mail.com'; //Los atributos no static, se asocian a tráves de los objetos
 
     constructor(nombre, apellido){ 
         this._nombre = nombre; 
@@ -49,7 +49,7 @@ Persona.saludar2(personax); //El metodo estatico recibe como argumento el objeto
 console.log(Persona.contadorObjetosPersonas);
 console.log(personax.idPersona); //Obtenemos el ID generado por el contador generador de ID
 
-//A medida que se crean más objetos el numero del contador aumenta
+//A medida que se crean más objetos el número del contador aumenta
 let personaz = new Persona('Diego', 'Ramirez');
 console.log(Persona.contadorObjetosPersonas);
 console.log(personaz.idPersona);

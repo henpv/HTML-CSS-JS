@@ -99,4 +99,4 @@ let arreglo = ["A", "2017"]; // Para el metodo apply se requiere crear un arregl
 
 //el objeto2 toma prestado el metodo del objeto1 para obtener su referencia completa (a traves del metodo apply)
 console.log(automovil10.referenciaCompleta.apply(automovil2, arreglo));
-// a diferencia del metodo call, se reuiere crear un arreglo para que puedan pasar los argumentos al metodo del objeto
+// a diferencia del metodo call, se requiere crear un arreglo para que puedan pasar los argumentos al metodo del objeto

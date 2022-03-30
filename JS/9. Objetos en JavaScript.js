@@ -8,7 +8,7 @@ let persona = {
         return this.nombre + ' ' + this.apellido  //Se utiliza el this para llamar atributos creados dentro del mismo objeto donde estamos
     }
 }
-console.log(persona.email);//pára acceder a los atributos del objeto lo hacemos con el punto:  objeto.atributo
+console.log(persona.email);//para acceder a los atributos del objeto lo hacemos con el punto:  objeto.atributo
 console.log(persona.edad);
 
 console.log(persona.nombreCompleto());//Para acceder a un metodo se debe llamar la función con parentesis y si requiere se deben ingresar los argumentos

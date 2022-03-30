@@ -17,5 +17,5 @@ var nombreCompleto = nombre + ' ' + apellido;
  x = 'Laura' + (4 + 5); /* Para que haga un suma primero, se utilizan los parentesisi para indicar la prioridad con la suma de los números dentro de los parentesis */
  console.log(x);
 
- x = 2 + 4 + 'Laura'; /* En el caso que comience primero con numeros, se hace la operación mateatica y luego concatena con el texto */
+ x = 2 + 4 + 'Laura'; /* En el caso que comience primero con números, se hace la operación mateatica y luego concatena con el texto */
 console.log(x)

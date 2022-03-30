@@ -15,7 +15,7 @@ console.log(autos2[0]); //accedemos solo al primer elemento del arreglo, el indi
 
 //recorrer el arreglo
 for(let i = 0 ; i < autos2.length ; i++){
-    console.log(autos2[i] + "(" + i + ")");
+    console.log(autos2[i] + "(" + i + ") ");
 }
 
 

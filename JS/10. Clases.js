@@ -1,7 +1,7 @@
 /* ----------------------------------------- Clases en JavaScript ------------------------------------------------------ */
 class Persona{ //Las clases deben comenzar por mayuscula
     constructor(nombre, apellido){ //Dentro de la clase se debe generar el constructor
-        this._nombre = nombre; //Es recomendable colocar una raya al piso en el nombre del atributo, para que no hay problemas con los metodos GET y SET
+        this._nombre = nombre; //Es recomendable colocar una raya al piso en el nombre del atributo, para que no haya problemas con los metodos GET y SET
         this._apellido = apellido;
     }
 
@@ -35,7 +35,7 @@ class Persona{ //Las clases deben comenzar por mayuscula
 
 }
 
-let persona1 = new Persona('Henry','Parra'); //Se crea un nuevo objeto, con llamar la clase inmediatamente ente parentesis se nvia los argumentos que hacen referencia al constructor.
+let persona1 = new Persona('Henry','Parra'); //Se crea un nuevo objeto, con llamar la clase inmediatamente ente parentesis se envía los argumentos que hacen referencia al constructor.
 console.log(persona1);
 
 //metodo GET
@@ -69,7 +69,7 @@ class Empleado extends Persona{ //Con la palabra reservada extends hacemos refer
         return super.nombreCompleto() + " " + this._departamento; //Super nos sirve para llamar el metodo de la clase padre, adicional le agregamos el nuevo valor
     }
 }
-// Creamos un nuevo objeto empleado, en el cual indicaremos los atributos heredados de la clase pade (nombre y apellido) y tambien se incluye el atributo propio de la calse hija (departamento)
+// Creamos un nuevo objeto empleado, en el cual indicaremos los atributos heredados de la clase pade (nombre y apellido) y tambien se incluye el atributo propio de la clase hija (departamento)
 let empleado1 = new Empleado('Maria', 'Jimenez','Sistemas');
 
 console.log(empleado1);
@@ -80,7 +80,7 @@ console.log(empleado1.nombreCompleto());//Validamos que hereda los metodos de la
 /* Object es la clase padre de todas, todas las clases que se creen, siempre van a heredar de la clase Object, por lo tanto Object tiene unos metodos que aplican a todas la clases en JS */
  console.log(empleado1.toString());
 
-//Polimosrfismo, depende de la clase (padre o hija) a la que haga referencia el toString que ha sido sobre escrito se comportara de maneras deiferentes.
+//Polimorfismo, depende de la clase (padre o hija) a la que haga referencia el toString que ha sido sobre escrito se comportara de maneras deiferentes.
  console.log(persona1.toString());
  console.log(empleado1.toString())
 

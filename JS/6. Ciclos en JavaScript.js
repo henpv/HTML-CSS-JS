@@ -43,7 +43,7 @@ for(let x = 0 ; x <= 10 ; x++ ){
 }
 
 /* -------------------------------------------------palabra CONTINUE ------------------------------------------------ */
-// La palabara continue no para un ciclo, pero si detiene su ejecución y da paso a su sieguiente iteración
+// La palabara continue no para un ciclo, pero si detiene su ejecución y da paso a su siguiente iteración
 //En el siguiente caso solo nos mostrara los numeros pares, ya que cuando enuentre un numero impar entonces seguira a la siguiete iteración y no imprime nada
 
 for(x = 0 ; x <= 10 ; x++ ){

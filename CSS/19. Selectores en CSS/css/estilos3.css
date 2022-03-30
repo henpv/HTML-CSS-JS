@@ -11,7 +11,7 @@ div.contenedor{
     color: #457b9d;
     text-align: center;
 }
-div.contenedor p::selection{ /* Pseudo clase don doble doble punto, al momento de seleccionar el texto lo hace de color rojo */
+div.contenedor p::selection{ /* Pseudoclase con doble punto, al momento de seleccionar el texto lo hace de color rojo */
     color: red;
     background-color: yellow;
 }

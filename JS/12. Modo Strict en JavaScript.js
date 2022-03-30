@@ -3,10 +3,10 @@
 //Como se ha visto antes, si se utiliza una variable si haberla declarado, JavaScript no nos devolvera nigun tipo de error 
 //Pero ya que esto se considera una mala practica podemos evitarlo utilizando el modo Strict.
 
-//esto debe ser declarado en la primer linea del código, o si se requiere solo para una función, entonces se declara en la primera linea de una función
+//esto debe ser declarado en la primer línea del código, o si se requiere solo para una función, entonces se declara en la primera linea de una función
 
 "use strict" //solo agregando esta linea se activa el modo estricto, no es necesario agregarlo, pero puede ser una buena practica
-//Si quitamos el moso stricto no nos devolvera ningun mensaje de error al no definir la variable
+//Si quitamos el modo stricto no nos devolvera ningun mensaje de error al no definir la variable
 
 
 let x = 2; // si quitamos el let, var o const, nos devolvera un mensaje de error.
